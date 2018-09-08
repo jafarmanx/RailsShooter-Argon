@@ -5,12 +5,14 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour {
 
+    [Header("General")]
     [Tooltip("m/s ^-1")][SerializeField] float xSpeed = 4f;
     [SerializeField] float xRange = 4f;
 
     [Tooltip("m/s ^-1")] [SerializeField] float ySpeed = 4f;
     [Tooltip("m")] [SerializeField] float yRange = 4f;
 
+    [Header("Screen Position Base")]
     [SerializeField] float positionPitchFactor = -5f;
     [SerializeField] float throwPitchFactor = -5f;
 
@@ -19,6 +21,7 @@ public class Player : MonoBehaviour {
 
     float xThrow;
     float yThrow;
+    bool isControlEnabled = true;
 
     // Use this for initialization
     void Start () {
@@ -28,10 +31,12 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        ProcessTranslation();
-        ProcessRotation();
+        if (isControlEnabled)
+        {
+            ProcessTranslation();
+            ProcessRotation();
+        }
     }
-
 
     private void ProcessRotation()
     {
@@ -55,5 +60,11 @@ public class Player : MonoBehaviour {
         float yClamp = Mathf.Clamp(yRawPos, -yRange, yRange);
 
         transform.localPosition = new Vector3(xClamp, yClamp, transform.localPosition.z);
+    }
+
+    void OnPlayerDeath()
+    {
+        print("Yup Dead!");
+        isControlEnabled = false;
     }
 }
