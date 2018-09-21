@@ -234,7 +234,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4513247876729916, guid: 144eebe39cbdd4388893f05bbda9b901, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 144eebe39cbdd4388893f05bbda9b901, type: 2}
@@ -276,7 +276,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4294801873266372, guid: fc08f761e728049c08a6f35c23ad69e4, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc08f761e728049c08a6f35c23ad69e4, type: 2}
@@ -400,7 +400,7 @@ Transform:
   - {fileID: 1782266556}
   - {fileID: 141742146}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &437759813
 MonoBehaviour:
@@ -465,32 +465,40 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4695671188185818, guid: d3a1db3844451441ba09c6c27a21b2c4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4695671188185818, guid: d3a1db3844451441ba09c6c27a21b2c4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016965099071596, guid: d3a1db3844451441ba09c6c27a21b2c4, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 198506483523801620, guid: d3a1db3844451441ba09c6c27a21b2c4,
+    - target: {fileID: 198515633120358292, guid: d3a1db3844451441ba09c6c27a21b2c4,
         type: 2}
-      propertyPath: InitialModule.startSize.minScalar
-      value: 2
+      propertyPath: CollisionModule.collisionMessages
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 198506483523801620, guid: d3a1db3844451441ba09c6c27a21b2c4,
+    - target: {fileID: 198515633120358292, guid: d3a1db3844451441ba09c6c27a21b2c4,
         type: 2}
-      propertyPath: InitialModule.startSize.scalar
-      value: 5
+      propertyPath: CollisionModule.type
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 198506483523801620, guid: d3a1db3844451441ba09c6c27a21b2c4,
+    - target: {fileID: 198395210627549260, guid: d3a1db3844451441ba09c6c27a21b2c4,
         type: 2}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 0.3
+      propertyPath: CollisionModule.type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198395210627549260, guid: d3a1db3844451441ba09c6c27a21b2c4,
+        type: 2}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 198515633120358292, guid: d3a1db3844451441ba09c6c27a21b2c4,
+        type: 2}
+      propertyPath: CollisionModule.minKillSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 198395210627549260, guid: d3a1db3844451441ba09c6c27a21b2c4,
+        type: 2}
+      propertyPath: CollisionModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198515633120358292, guid: d3a1db3844451441ba09c6c27a21b2c4,
+        type: 2}
+      propertyPath: CollisionModule.enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3a1db3844451441ba09c6c27a21b2c4, type: 2}
@@ -532,7 +540,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
       propertyPath: m_LocalScale.x
@@ -630,7 +638,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4540120213004878, guid: 4c2ecf20cb5c240a79f092bc4033748b, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 65259278824886182, guid: 4c2ecf20cb5c240a79f092bc4033748b,
         type: 2}
@@ -677,7 +685,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
       propertyPath: m_LocalScale.x
@@ -804,30 +812,6 @@ Prefab:
     - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 1.7910001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 50.932003
-      objectReference: {fileID: 0}
-    - target: {fileID: 4907954513658632, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180.622
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4ac1000c53504c21bc4e1c1e0ff84d0, type: 2}
