@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 199326447480755044}
   - component: {fileID: 82558127317076264}
   m_Layer: 0
-  m_Name: Explosion
+  m_Name: Player Death Effects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
